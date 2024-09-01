@@ -131,6 +131,17 @@ ls -l 2> output.txt -- 2 is for error --  it will got to output.txt only if it i
 ls -l &> output.txt  -- either of success or error will go
 ls -l &>> output.txt - append 
 
+/var/log/shell-script/16-redirectors-<timestamp>.log
+
+-----------------------
+
+&>>$LOG_FILE
+
+write logs to both terminal and folder log file
+
+tee -a $LOG_FILE
+
+
 
 
 
