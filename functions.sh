@@ -28,6 +28,7 @@ then
     VALIDATE $? "MYSQL insatllation"
 else
     echo "mysql is already installed"
+fi
 
 dnf list insatlled git
 if [ $? -ne 0 ]
@@ -37,3 +38,4 @@ then
     VALIDATE $? "git insatllation"
 else
     echo "git is already installed"
+fi
