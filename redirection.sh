@@ -29,10 +29,11 @@ VALIDATE() {
 }
 
 USAGE(){
-    echo -e "$R USAGE: $N sudo sh redirections.sh package1 ..." &>>$LOG_FILE
+    echo -e "$R USAGE: $N sudo sh redirections.sh package1 ..." 
     exit 1
 }
 USERID=$(id -u)
+echo "script started executing at : $date"
 CHECK_ROOT $USERID
 if [ $# -eq 0 ]
 then
