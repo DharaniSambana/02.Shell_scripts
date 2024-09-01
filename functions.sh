@@ -20,7 +20,7 @@ VALIDATE() {
 
 USERID=$(id -u)
 CHECK_ROOT $USERID
-dnf list installed mysqld
+dnf list installed mysql
 if [ $? -ne 0 ]
 then
     echo "Mysql is not installed, installing it "
