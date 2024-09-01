@@ -70,6 +70,10 @@ $PWD - working directory
 $HOME - home directory of user
 $$- PID script
 $! - PID of background process
+$? - last command status - either success or not success means - 0 , anything else is failure
+0 - success
+1-127 - failure
+
 ----------------------------
 
 COMMENTS
