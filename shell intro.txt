@@ -1,0 +1,119 @@
+Shell scripting
+-------------
+
+Configuration 
+--------------
+
+1- Install application on runtime 
+2- create a user 
+3- create a folder 
+4- download the code
+5- install dependencies 
+6- create systemctl services 
+
+
+What is shell
+
+shell is the interpreter in Linux
+that checks and executes the user commands
+/bin/bash -- we have our interpreter every command inside Linux server
+
+Error handling 
+check every command 
+success - fine
+fail - inform user and stop 
+
+always we need to know manual process for every automation process
+-first we need to write algorithm
+
+
+-----------------------
+echo - prints the output on to terminal
+read - read from terminal 
+
+read  -- if variable is not used the data is stored in $REPLY
+
+read
+hello world
+echo $REPLY
+hello world
+
+read -s -secure
+read -p -with promt
+
+-----------------------------
+
+Arrays
+
+mixed or sigle
+
+arr1=(1 2 3) -- with single space - any number spaces space is not counted
+
+echo $arr1 -- gives the first element - 0th 
+
+
+---------------------------------
+
+VARIABLE=$(COMMAND)
+
+
+num3=$num1+$num2---dont working directly 
+
+sum=$(($num1+$num2))
+
+----------------------------
+Special variables
+$@ -all variables passed to script
+$# - no of variable of passed to script
+$0 - script name
+$PWD - working directory 
+$HOME - home directory of user
+$$- PID script
+$! - PID of background process
+----------------------------
+
+COMMENTS
+#
+<<'COMMENTS'
+
+FFJCBDSJBUISDHIUCBS
+
+COMMENTS
+
+------------------------------------
+
+CONDITIONS
+
+if [ $var -eq $var2 ]
+then
+	echo 
+else
+	echo
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
