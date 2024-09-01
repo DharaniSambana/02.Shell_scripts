@@ -3,6 +3,16 @@
 echo "for below i have used read function and user inputs "
 
 echo "Enter person1 name"
+read username1
+echo "password"
+read password
+
+echo "person1= $username1"
+echo "password = $password"
+
+echo "for below i have used read -s function and user inputs "
+
+echo "Enter person1 name"
 read -s username1
 echo "enter person2 name"
 read -s username2
