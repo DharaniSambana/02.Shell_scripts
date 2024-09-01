@@ -95,9 +95,41 @@ else
 	echo
 fi
 
+---------------------------------------
+functions
+
+func_name(){
+	---
+
+}
+
+func_name
+
+------------------------------------------
+success - green
+failure- red
 
 
+31m - red
+32m - green
+33m - yellow
 
+"\e[31m"
+
+--------------------------------
+for variable in $@
+do 
+	echo $variable 
+done
+---------------------
+
+ls -l > output.txt - result of ls -l
+
+ls -l 1> output.txt -- 1 is for sucess--  it will got to output.txt only if it is sucess
+ls -l 2> output.txt -- 2 is for error --  it will got to output.txt only if it is error
+
+ls -l &> output.txt  -- either of success or error will go
+ls -l &>> output.txt - append 
 
 
 
