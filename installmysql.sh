@@ -10,9 +10,9 @@
 # or else throug error
 # COMMENTS
 
-USERID=$(uid -u)
+USERID=$(id -u)
 echo "user ID is: $USERID"
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
     echo "please run this script with root priveleages"
     exit 1
