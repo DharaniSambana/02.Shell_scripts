@@ -23,6 +23,13 @@ if [ $? -ne 0 ]
 then 
     echo "git is not installed, going to install"
     dnf install git -y
+    if [ $? -ne 0 ]
+    then 
+        echo "git installation is not sucess"
+        exit 1
+    else
+        echo "git installation sucess"
+    fi
 else
     echo "git is already installed, noting to do"
 
