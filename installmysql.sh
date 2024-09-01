@@ -10,7 +10,7 @@
 # or else throug error
 # COMMENTS
 
-USERID=$(id -u)
+USERID=$(uid -u)
 echo "user ID is: $USERID"
 if [ USERID -ne 0 ]
 then
