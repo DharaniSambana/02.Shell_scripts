@@ -27,8 +27,8 @@ do
     if [ $? -ne 0 ]
     then
         echo "$package is not installed, installing it "
-        dnf install mysql-server -y
-        VALIDATE $? "MYSQL insatllation"
+        dnf install $package -y
+        VALIDATE $? "$package insatllation"
     else
         echo "$package is already installed"
     fi
