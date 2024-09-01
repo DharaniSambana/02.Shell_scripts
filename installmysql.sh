@@ -24,6 +24,7 @@ then
         systemctl start mysqld
         systemctl enable mysqld
         systemctl status mysqld
+        exit 0
 
     fi
 else
@@ -32,6 +33,7 @@ else
     systemctl start mysqld
     systemctl enable mysqld
     systemctl status mysqld
+    exit 0
 
 
 fi 
