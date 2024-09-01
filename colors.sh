@@ -16,10 +16,10 @@ CHECK_ROOT(){
 VALIDATE() {
     if [ $1 -ne 0 ]
     then 
-        echo " $2  is not $R sucess $N"
+        echo -e " $2  is not $R sucess $N"
         exit 1
     else
-        echo " $2  $G sucessfull $N"
+        echo  -e " $2  $G sucessfull $N"
     fi
 }
 
@@ -28,11 +28,11 @@ CHECK_ROOT $USERID
 dnf list installed mysql
 if [ $? -ne 0 ]
 then
-    echo "Mysql is not installed, installing it "
+    echo -e "Mysql is not installed, installing it "
     dnf install mysql-server -y
     VALIDATE $? "MYSQL insatllation"
 else
-    echo "$G mysql $R is already installed"
+    echo -e "$G mysql $R is already installed"
 fi
 
 dnf list insatlled git
@@ -42,5 +42,5 @@ then
     dnf install git -y
     VALIDATE $? "git insatllation"
 else
-    echo "$G git $R is already installed"
+    echo -e  "$G git $R is already installed"
 fi
