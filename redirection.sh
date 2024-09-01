@@ -27,8 +27,17 @@ VALIDATE() {
         echo -e " $2 $G sucessfull $N" &>>$LOG_FILE
     fi
 }
+
+USAGE(){
+    echo -e "$R USAGE: $N sudo sh redirections.sh package1 ..." &>>$LOG_FILE
+    exit 1
+}
 USERID=$(id -u)
 CHECK_ROOT $USERID
+if [ $# -eq 0 ]
+then
+    USAGE
+fi
 
 for package in $@
 do 
